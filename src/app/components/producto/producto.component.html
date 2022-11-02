@@ -1,0 +1,22 @@
+<h1>{{producto.nombre | uppercase }} <small>({{producto.fecha | date:'y'}})</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast informacion-producto">
+
+  <div class="col-md-2">
+
+    <img [src]="producto.img" class="img-fluid img-producto" [alt]="producto.nombre">
+    <br><br>
+    <a [routerLink]="['/productos']" class="btn btn-outline-dark w-100">Regresar</a>
+  </div>
+
+  <div class="col-md-8">
+    <h3 class="info-title">{{producto.nombre}}</h3>
+    <hr>
+    <p class="info-disc">
+      {{producto.desc}}
+    </p>
+
+  </div>
+
+</div>

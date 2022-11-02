@@ -1,0 +1,13 @@
+<h1 class="title-productos"><small>{{ termino }}</small></h1>
+<hr>
+
+<div class="row" *ngIf="productos.length == 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      <strong>No existen Resultado de: {{ termino }}</strong>
+    </div>
+  </div>
+</div>
+<div class="row row-cols-2 row-cols-md-3 g-3">
+  <app-producto-tarjeta [producto]="producto" [index]="producto.idx" *ngFor="let producto of productos; let i = index"></app-producto-tarjeta>
+  </div>

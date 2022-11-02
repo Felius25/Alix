@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #948f8f;
+}
+.logo-navbar{
+  width: 70px;
+}
+
+.navbar{
+  background-image: linear-gradient(5deg,black,#ee0430);
+}
+.nav-item{
+  margin-left: 100px;
+  text-transform: uppercase;
+}
+.nav-link{
+  transition: 0.2;
+}
+.nav-link:hover{
+  transform: scale(1.3);
+}
+
+.container-productos{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/img/fondo.png);
+  background-size: cover;
+  text-align: center;
+}
+.container-productos h1{
+  font-size: 70px;
+  color: #ee0430;
+}
+.container-productos p{
+  font-size: 30px;
+  color: white;
+}
+.boton-productos {
+  background: black;
+  color: #ee0430;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  transition: .5s;
+  text-transform: uppercase;
+}
+.boton-productos:hover{
+  transform: scale(1.2);
+  background: white;
+  color: #000;
+}
+.carousel{
+  width: 95%;
+  height: 380px;
+  margin: auto;
+  margin-top: 20px;
+}
+.carousel-item{
+  margin-top: 10px;
+  border: 1px #ee0430 solid;
+  border-radius: 30px;
+  background-color: #ee0430;
+  color: white;
+}
+.carousel-item h2{
+  font-size: 40px;
+  text-align: center;
+}
+.carousel-item p{
+  font-size: 20px;
+  text-align: center;
+}
+.carousel-img{
+  width: 500px;
+  height: 250px;
+  border-radius: 20%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-mapa{
+  width: 500px;
+  height: 325px;
+  border-radius: 10%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-control-prev{
+  size: 10px;
+}
+.carousel-control-prev-icon{
+  height: 10px;
+}
+.accordion{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.title-productos{
+  color: #ee0430;
+  text-align: center;
+  font-size: 50px;
+}
+.img-producto{
+  width: 300px;
+}
+.info-title{
+  font-size: 40px;
+  text-align: center;
+  color: #ee0430;
+}
+.info-disc{
+  font-size: 20px;
+  color: black;
+}
+.form-contact{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px black solid;
+  background-image: linear-gradient(200deg,#ee0430,black);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.logo-form{
+  width: 160px;
+}
+.form-control{
+  height: 40px;
+}

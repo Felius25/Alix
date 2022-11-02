@@ -1,0 +1,37 @@
+<form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+  <div class="form-contact">
+    <img src="assets/img/LOGOP.png" alt="" class="logo-form">
+    <br>
+    <label>Nombres y Apellidos
+    <input type="text" formControlName="nombre" class="form-control">
+    <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+      (El nombre no puede quedar vacío)
+    </span>
+    <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['minlength']">
+      (Debe tener como mínimo 10 caracteres)
+    </span>
+  </label>
+    <br>
+    <label>Correo</label>
+    <input type="email" class="form-control" formControlName="correo">
+    <span *ngIf="this.formularioContacto.get('correo')?.errors?.['required']">
+      (El mail no puede quedar vacío)
+    </span>
+    <span *ngIf="this.formularioContacto.get('correo')?.errors?.['email']">
+      (El mail no es válido)
+    </span>
+    <br>
+    <label>Mensaje</label>
+    <textarea cols="70" rows="10" class="form-control" formControlName="mensaje"></textarea>
+    <div *ngIf="this.formularioContacto.get('mensaje')?.errors?.['required']">
+      (El mensaje no puede quedar vacío)
+    </div>
+    <div *ngIf="this.formularioContacto.get('mensaje')?.errors?.['maxlength']">
+      (Debe tener como máximo 500 caracteres)
+    </div>
+    <br>
+    <button type="submit" class="btn btn-danger w-100">Enviar</button>
+    <div>{{resultado}}</div>
+  </div>
+</form>
+

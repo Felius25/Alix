@@ -1,0 +1,13 @@
+<div class="col">
+  <div class="card h-100">
+    <img [src]="producto.img" class="card-img-top" [alt]="producto.nombre" height="500">
+    <div class="card-body">
+      <h5 class="card-title">{{producto.nombre}}</h5>
+      <p class="card-text">{{ producto.desc }}</p>
+      <h5 class="card-title"><small>{{producto.marca}}</small></h5>
+      <p class="card-text"><small class="text-muted">{{ producto.fecha }}</small></p>
+      <!-- <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver mas link...</a> -->
+      <button (click)="verProducto()" type="button" class="btn btn-outline-danger w-100">Ver mas...</button>
+    </div>
+  </div>
+ </div>
